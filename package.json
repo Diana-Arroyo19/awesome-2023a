@@ -1,0 +1,25 @@
+{
+  "name": "awesome-2023a",
+  "version": "0.0.0",
+  "description": "App for learning ExpressJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diana-Arroyo19/awesome-2023a.git"
+  },
+  "keywords": [
+    "ITGAM",
+    "JavaScript",
+    "Express",
+    "DWPCI"
+  ],
+  "author": "Diana Arroyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Diana-Arroyo19/awesome-2023a/issues"
+  },
+  "homepage": "https://github.com/Diana-Arroyo19/awesome-2023a#readme"
+}
