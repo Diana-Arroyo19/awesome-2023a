@@ -8,6 +8,28 @@ import express from 'express';
 // crear constante
 const app = express();//(req,res)=> {MONTON DE CODIGO}
 
+// registarr mi primier middleware
+app.use((req, res, next) => {
+    console.log("⭐Ejecunatndo el Middleware 1");
+    // invocando el siguiente middleware
+    next();
+});
+
+
+app.use((req, res, next) => {
+    console.log(`🎆${req.method} - ${req.url}`);
+    // invocando el siguiente middleware
+    next();
+});
+
+app.use((req, res, next) => {
+    console.log("⭐Respondiendo al cliente");
+    res.send(`
+    <h1>Welcome to express</h1>
+    <p>This is my awesome app</p>`
+    );
+});
+
 // creacion del servidor
 // creacion de su constante
 const server = http.createServer(app);
