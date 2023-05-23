@@ -30,6 +30,7 @@
   "homepage": "https://github.com/Diana-Arroyo19/awesome-2023a#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "http-status": "^1.6.2",
     "watch": "^1.0.2"
   }
 }
