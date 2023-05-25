@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: bolder;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    .main-header {
+      width: 100%;
+      height: 3.5rem;
+      background-color: #8E9AAF;
+      padding: 0 1.5rem;
+    }
+
+    .main-header_nav {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .main-header_item-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .main-header_item {
+      margin: 0 1rem;
+      padding: 0;
+    }
+
+    .main-header_item a {
+      text-decoration: none;
+      color: #CBC0D3;
+    }
+
+    .main-header_item a:hover,
+    .main-header_item a:active,
+    .main-header_item a.active {
+      color: #EFD3D7;
+    }
+
+  </style>
+  <title>-Shop-</title>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Shop</a></li>
-        <li><a href="/admin/add-product">Add Product</a></li>
+  <header class="main-header">
+    <nav class="main-header_nav">
+      <ul class="main-header_item-list">
+        <listyle="border-style: dashed; border-color: blue" class="main-header_item">
+          <a class="active" href="/">Shop</a>
+          </li>
+          <listyle="border-style: dashed; border-color: blue" class="main-header_item">
+            <a href="/admin/add-product">Add Product</a>
+          </li>
       </ul>
     </nav>
   </header>
@@ -21,3 +79,4 @@
   </main>
 </body>
 </html>
+<!-- https://coolors.co/8e9aaf-cbc0d3-efd3d7-feeafa-dee2ff -->
