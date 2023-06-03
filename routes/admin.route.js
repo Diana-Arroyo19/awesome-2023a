@@ -17,7 +17,7 @@ router.get('/add-product', (req, res, next) => {
   console.log(`ROOT_DIR: ${ROOT_DIR}`);
   console.log("📢 Sirviendo formulario...");
   // res.sendFile(path.join(ROOT_DIR, "views", "add-product.html"));
-  res.render('add-product');
+  res.render('add-product', {addProduct:`active`});
 });
 
 // POST /add-product
