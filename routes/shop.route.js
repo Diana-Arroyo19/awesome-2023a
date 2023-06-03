@@ -15,7 +15,7 @@ router.get('/', (req, res)=>{
   console.log(products);
   console.log("📢 Sirviendo la ruta '/'");
   // res.sendFile(path.resolve('views','shop.html'));
-  res.render('shop', {shop:'active'});
+res.render('shop', {shop:`active`, docTitle:"-Shop-"});
 });
 
 // GET /about
