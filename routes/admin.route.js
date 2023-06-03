@@ -1,7 +1,9 @@
 // Importando el enrutador de express
 import { Router } from 'express';
+
 // Importando el gestor de rutas
 import path from 'path';
+
 // importar ROOT_DIR
 import { ROOT_DIR } from '../helpers/paths.js';
 
@@ -19,7 +21,7 @@ router.get('/add-product', (req, res, next) => {
   // res.sendFile(path.join(ROOT_DIR, "views", "add-product.html"));
   res.render('add-product', {
     addProduct:`active`,
-    viewStyle: '/css/product.css',
+    viewStyle: '/css/add-product.css',
     docTitle:"-Add Product-"});
 });
 
