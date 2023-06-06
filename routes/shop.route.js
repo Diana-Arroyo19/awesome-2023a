@@ -1,13 +1,20 @@
 // Importando el enrutador de express
 import { Router } from 'express';
-// Importando Action funcion del controlador products
-import { getProducts } from '../controllers/products.controller.js'
+
+// Importando el gestor de rutas
+// import path from 'path';
+
+// Importando el arreglo de productos
+import { products } from './admin.route.js';
+import { getProducts } from '../controllers/products.controller.js';
 
 // Creando una instancia del enrutador de express
 const router = Router();
 
 // GET /
-router.get('/', getProducts);
+router.get('/',getProducts);
+
+
 
 // GET /about
 router.get('/about', (req, res) => {
@@ -18,5 +25,7 @@ router.get('/about', (req, res) => {
     <p>App for Fullstack Web Dev Course I!</p>
   `);
 });
+
+
 
 export default router;
